@@ -1,0 +1,21 @@
+HTTrack3.49-2 launched on Thu, 26 Dec 2019 14:29:20 at http://webdesign-finder.com/html/nafta/
+(httrack http://webdesign-finder.com/html/nafta/ )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:38:53	Error: 	"Not Found" (404) at link webdesign-finder.com/html/nafta/blog-@@type.html (from webdesign-finder.com/html/nafta/)
+14:38:53	Error: 	"Not Found" (404) at link webdesign-finder.com/html/nafta/blog-single-@@type.html (from webdesign-finder.com/html/nafta/)
+14:41:49	Warning: 	File not parsed, looks like binary: webdesign-finder.com/html/nafta/fonts/fa-brands-400.woff2
+14:41:49	Warning: 	File not parsed, looks like binary: webdesign-finder.com/html/nafta/fonts/fa-regular-400.woff2
+14:41:49	Warning: 	File not parsed, looks like binary: webdesign-finder.com/html/nafta/fonts/fa-solid-900.woff2
+14:41:49	Error: 	"Not Found" (404) at link webdesign-finder.com/html/nafta/gallery-regular.html (from webdesign-finder.com/html/nafta/shortcodes_widgets_default.html)
+14:41:49	Error: 	"Not Found" (404) at link webdesign-finder.com/html/nafta/cart.html (from webdesign-finder.com/html/nafta/shop-right.html)
+14:41:49	Error: 	"Not Found" (404) at link webdesign-finder.com/html/nafta/shop-account-address.html (from webdesign-finder.com/html/nafta/shop-account-dashboard.html)
+14:41:49	Error: 	"Not Found" (404) at link webdesign-finder.com/html/nafta/shop-@@type.html (from webdesign-finder.com/html/nafta/shop-full.html)
+14:41:49	Error: 	"Not Found" (404) at link webdesign-finder.com/html/nafta/shop-product-@@type.html (from webdesign-finder.com/html/nafta/shop-cart.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 12 minutes 29 seconds : 253 links scanned, 245 files written (19708843 bytes overall) [13765170 bytes received at 18378 bytes/sec], 8432484 bytes transferred using HTTP compression in 135 files, ratio 27%, 4.2 requests per connection
+(7 errors, 3 warnings, 0 messages)
