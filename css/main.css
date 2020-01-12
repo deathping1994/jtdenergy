@@ -1624,7 +1624,7 @@ input[type="radio"]:disabled + label:before {
 	border-radius: 5em;
 	font-weight: 500;
 	min-width: 200px;
-	padding: 22px 35px;
+	padding: 10px 20px;
 }
 
 @media (max-width: 575px) {
@@ -26850,7 +26850,7 @@ a img.aligncenter {
 		bottom: 10px;
 		left: auto;
 		right: 15px;
-		top: auto;
+		top: 35px;
 		-webkit-transform: none;
 		transform: none;
 	}
@@ -28149,11 +28149,11 @@ body.active-side-header.slide-right .page_header_side {
 
 .page_slider .flex-control-nav li a {
 	background: #fff;
-	border-radius: 0;
+	border-radius: 3px;
 	cursor: pointer;
 	display: block;
 	font-size: 0;
-	height: 2px;
+	height: 5px;
 	margin: 0 5px;
 	opacity: 0.5;
 	position: relative;
@@ -28262,7 +28262,7 @@ body.active-side-header.slide-right .page_header_side {
 
 @media (min-width: 300px) and (max-width: 1450px) {
 	.page_slider .intro_featured_word {
-		font-size: 60px;
+		font-size: 30px;
 	}
 }
 
