@@ -387,6 +387,7 @@ blockquote p:before {
 	height: 72px;
 	left: -105px;
 	-webkit-mask: url("../img/quote.png") no-repeat center/contain;
+	mask: url("../img/quote.png") no-repeat center/contain;
 	position: absolute;
 	top: 13px;
 	width: 72px;
@@ -2011,6 +2012,7 @@ progressbar*/
 .owl-carousel .owl-stage {
 	position: relative;
 	-ms-touch-action: pan-Y;
+	touch-action: pan-y;
 }
 
 .owl-carousel.owl-shadow-items .owl-stage {
@@ -2036,10 +2038,12 @@ progressbar*/
 	position: relative;
 	/* fix for flashing background */
 	-webkit-transform: translate3d(0px, 0px, 0px);
+	transform: translate3d(0px, 0px, 0px);
 }
 
 .owl-carousel .owl-item {
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	float: left;
 	min-height: 1px;
 	position: relative;
@@ -2053,6 +2057,7 @@ progressbar*/
 
 .owl-carousel .owl-item img {
 	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
 }
 
 .owl-carousel .owl-nav.disabled,
@@ -2124,6 +2129,7 @@ progressbar*/
 
 .owl-carousel .owl-dots .owl-dot span {
 	-webkit-backface-visibility: visible;
+	backface-visibility: visible;
 	background-color: #dd4454;
 	border-radius: 50%;
 	display: block;
@@ -2252,6 +2258,7 @@ progressbar*/
 
 .owl-carousel .owl-video-play-icon {
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	background: url("../img/owl.video.play.png") no-repeat;
 	cursor: pointer;
 	height: 80px;
@@ -2528,6 +2535,7 @@ Owl Default Theme
 
 .flexslider .slides > li {
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	display: none;
 }
 
@@ -2805,6 +2813,7 @@ html[xmlns] .slides {
 .pswp {
 	/* create separate layer, to avoid paint on window.onscroll in webkit/blink */
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	display: none;
 	height: 100%;
 	left: 0;
@@ -2866,6 +2875,7 @@ html[xmlns] .slides {
 */
 .pswp__bg {
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	background: #000;
 	height: 100%;
 	left: 0;
@@ -2933,6 +2943,7 @@ html[xmlns] .slides {
 .pswp__container,
 .pswp__zoom-wrap {
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 .pswp__item {
@@ -2958,6 +2969,7 @@ html[xmlns] .slides {
 */
 .pswp__img--placeholder {
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 /*
@@ -3172,6 +3184,7 @@ html[xmlns] .slides {
 
 .pswp__share-modal {
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	background: rgba(0, 0, 0, 0.5);
 	display: block;
 	height: 100%;
@@ -3192,6 +3205,7 @@ html[xmlns] .slides {
 
 .pswp__share-tooltip {
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	background: #fff;
 	border-radius: 2px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
@@ -3519,6 +3533,7 @@ a.pswp__share--download:hover {
 .pswp--has_mouse .pswp__button--arrow--left,
 .pswp--has_mouse .pswp__button--arrow--right {
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
 	will-change: opacity;
 }
@@ -12801,9 +12816,6 @@ body.boxed {
 	background-color: #dd4454;
 }
 
-.ds {
-	/* shop */
-}
 
 .ds .list-bordered li {
 	border-color: #fff;
@@ -20902,6 +20914,7 @@ span.muted-bg {
 .special-heading.numeric:before {
 	background: linear-gradient(to top, #dd4454 0%, #dd9044 100%);
 	-webkit-background-clip: text;
+	background-clip: text;
 	content: "0" counter(special-heading) ".";
 	counter-increment: special-heading;
 	font-size: 100px;
@@ -21260,6 +21273,7 @@ p.special-heading.text-center {
 	content: "";
 	height: 12px;
 	-webkit-mask: url("../img/quote.png") no-repeat center/contain;
+	mask:url("../img/quote.png") no-repeat center/contain ;
 	position: absolute;
 	right: 0;
 	top: 50px;
@@ -21711,7 +21725,9 @@ filters
 	height: 194px;
 	left: 50%;
 	-webkit-mask: url(../img/dots-vertical.png);
+	mask: url(../img/dots-vertical.png);
 	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
 	position: absolute;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
@@ -21799,7 +21815,9 @@ filters
 .step-gorizontal .step .step-number {
 	background: linear-gradient(to top, #dd4454 0%, #dd9044 100%);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
+	
 }
 
 .step-gorizontal .step .step-number h3 {
@@ -21993,6 +22011,7 @@ filters
 .service-v2 [class*="col-"]:nth-child(1) .service-single.with-icon.layout2 .icon-styled i {
 	background: linear-gradient(to top, #dd4454 0%, #dd9044 100%);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
@@ -22019,6 +22038,7 @@ filters
 .service-v2 [class*="col-"]:nth-child(2) .service-single.with-icon.layout2 .icon-styled i {
 	background: linear-gradient(to top, #dd4454 0%, #dd9044 100%);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
@@ -22045,6 +22065,7 @@ filters
 .service-v2 [class*="col-"]:nth-child(3) .service-single.with-icon.layout2 .icon-styled i {
 	background: linear-gradient(to top, #dd4454 0%, #dd9044 100%);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
@@ -22071,6 +22092,7 @@ filters
 .service-v2 [class*="col-"]:nth-child(4) .service-single.with-icon.layout2 .icon-styled i {
 	background: linear-gradient(to top, #dd4454 0%, #dd9044 100%);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
@@ -22097,6 +22119,7 @@ filters
 .service-v2 [class*="col-"]:nth-child(5) .service-single.with-icon.layout2 .icon-styled i {
 	background: linear-gradient(to top, #dd4454 0%, #dd9044 100%);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
@@ -22123,6 +22146,7 @@ filters
 .service-v2 [class*="col-"]:nth-child(6) .service-single.with-icon.layout2 .icon-styled i {
 	background: linear-gradient(to top, #dd4454 0%, #dd9044 100%);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
@@ -29810,6 +29834,7 @@ h4.entry-title {
 	content: "";
 	height: 12px;
 	-webkit-mask: url("../img/quote.png") no-repeat center/contain;
+	mask: url("../img/quote.png") no-repeat center/contain;
 	position: absolute;
 	right: 0;
 	top: 50px;
