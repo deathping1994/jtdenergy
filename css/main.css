@@ -3695,10 +3695,78 @@ a.pswp__share--download:hover {
 	color: #fff;
 }
 
+.floating-button{
+
+	background-color:#dd4454 ;
+	
+	text-align: center;
+	position: fixed;
+	bottom: 5rem;
+	right: 1rem;
+	z-index: 9999;
+	border-radius: 100px;
+	
+}
+
+.consultation-btn{
+	font-size: 1rem;
+	padding: 1rem;
+	text-align: center;
+}
+
+.btn--white:link, .btn--white:visited{
+	text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+	position: relative;
+	color: white;
+}
+
+.floating-button:hover {
+    transform: translateY(-4px);
+	box-shadow: 0 1rem 2rem rgba(44, 42, 42, 0.849);
+}
+
+.floating-button::after {
+	transform: scaleX(1.4), scaleY(1.6);
+	opacity: 0;  
+}
+
+.btn-animated{
+	animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+
+  @media (min-width: 320px) and (max-width: 568px){
+	  .btn--white{
+		  font-size: .7rem;
+	  }
+	  .floating-button{
+		  bottom: 1rem;
+	  }
+  }
+
+
+
 /* 
 ** toTop
 */
-#toTop {
+/* #toTop {
 	background-color: #dd4454;
 	border-radius: 50%;
 	bottom: 30px;
@@ -3713,7 +3781,7 @@ a.pswp__share--download:hover {
 	text-decoration: none;
 	width: 60px;
 	z-index: 1000;
-}
+} */
 
 #toTop:after {
 	bottom: 0;
