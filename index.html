@@ -29,6 +29,7 @@
 	<link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
 	<link rel="stylesheet" href="css/popup.css" class="color-switcher-link">
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 	<!--[if lt IE 9]>
 		<script src="js/vendor/html5shiv.min.js"></script>
@@ -1071,33 +1072,33 @@
 									<div class="row c-mb-10 c-gutter-10">
 										<div class="col-lg-12 text-center">
 											<div class="form-group has-placeholder">
-												<label for="name22335x5553">Full Name <span class="required">*</span></label>
-												<input type="text" aria-required="true" size="30" value="" name="name" id="name22335x5553" class="form-control" placeholder="Full Name">
+												<label for="fullname">Full Name <span class="required">*</span></label>
+												<input type="text" aria-required="true" size="30" value="" name="name" id="fullname" class="form-control" placeholder="Full Name">
 											</div>
 										</div>
 									</div>
 									<div class="row c-mb-10 c-gutter-10">
 										<div class="col-lg-12 text-center">
 											<div class="form-group has-placeholder">
-												<label for="name223355553">Phone Number <span class="required">*</span></label>
+												<label for="phonenumber">Phone Number <span class="required">*</span></label>
 
-												<input type="text" aria-required="true" size="30" value="" name="name" id="name223355553" class="form-control" placeholder="Phone Number">
+												<input type="text" aria-required="true" size="30" value="" name="name" id="phonenumber" class="form-control" placeholder="Phone Number">
 											</div>
 										</div>
 									</div>
 									<div class="row c-mb-10 c-gutter-10">
 										<div class="col-sm-12 text-center">
 											<div class="form-group has-placeholder">
-												<label for="message22335553">Message</label>
+												<label for="message">Message</label>
 
-												<textarea aria-required="true" rows="6" cols="45" name="message" id="message22335553" class="form-control" placeholder="Your Message"></textarea>
+												<textarea aria-required="true" rows="6" cols="45" name="message" id="message" class="form-control" placeholder="Your Message"></textarea>
 											</div>
 										</div>
 									</div>
 									<div class="row c-mb-10 c-gutter-10">
 										<div class="col-sm-12 mb-0 mt-50">
 											<div class="form-group">
-												<input class="btn btn-gradient big-btn" type="submit" value="Send message">
+												<button action="post" class="btn btn-gradient big-btn" type="submit" value="Send message">Send Message</button>
 											</div>
 										</div>
 									</div>
@@ -1349,18 +1350,18 @@
 											</div>
 											&nbsp;
 											<a href="https://www.goodreads.com/book/show/19723223-antifragile" class="authorbtn">
-												Antifragile by Nassim Nicholas
+												Antifragile by N. N. Taleb
 											</a>
 										</a>
 									</div>
 									<div class="col-lg-4 col-sm-6  ">
 										<a href="https://www.goodreads.com/book/show/19046084-the-hour-between-dog-and-wolf">
-											<div class="bordered text-center p-xl-70 p-20 rounded">
+											<div class="bordered text-center p-xl-70 p-20 rounded" style="margin-top: 1.3rem;">
 												<img src="img/books/Between the Hour of Dog and Wolf.jpg" alt="" style="max-width: 120px; min-height: 190px; align-items: center;" title="Between the Hour of Dog and Wolf">
 											</div>
 											&nbsp;
 											<a href="https://www.goodreads.com/book/show/19046084-the-hour-between-dog-and-wolf" class="authorbtn">
-												Between the Hour of Dog and Wolf by John Coates
+												The Hour Between Dog and Wolf by John Coates 
 											</a>
 										</a>
 									</div>
@@ -1404,7 +1405,7 @@
 											</div>
 											&nbsp;
 											<a href="https://www.goodreads.com/book/show/113576.The_Smartest_Guys_in_the_Room" class="authorbtn">
-												Enron: The Smartest Guys by Bethany McLean
+												The Smartest Guys in the Room by Bethany McLean
 											</a>
 										</a>
 									</div>
@@ -1442,7 +1443,7 @@
 										</div>
 										&nbsp;
 										<a href="https://www.goodreads.com/book/show/8536015-fooled-by-randomness" class="authorbtn">
-											Fooled by Randomness by Nicholas Taleb
+											Fooled by Randomness by N. N. Taleb
 										</a>
 									</a>
 								</div>
@@ -1530,222 +1531,6 @@
 				</div>
 			</section>
 
-			<!-- <section class="ls map-section s-pt-xl-160 s-pt-lg-130 s-pt-md-90 s-pt-60 s-pb-xl-160 s-pb-lg-130 s-pb-md-90 s-pb-60">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6">
-							<h2 class="special-heading">
-								<span class="text-capitalize">
-									We Spread<br> Around the World
-								</span>
-							</h2>
-							<div class="divider-45 hidden-below-lg"></div>
-							<div class="divider-30 hidden-above-lg"></div>
-							<p class="special-heading">
-								<span>
-									Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-								</span>
-							</p>
-							<div class="divider-45 hidden-below-lg"></div>
-							<div class="divider-30 hidden-above-lg"></div>
-							<div class="d-flex flex-column flex-sm-row justify-content-between flex-wrap ">
-								<div class="simple-counter">
-									<h3 class="special-heading counter-wrap">
-										<span class="counter color-main thin big" data-from="0" data-to="22" data-speed="1800">0</span>
-									</h3>
-									<p class="special-heading bold color-darkgrey">
-										<span>
-											Years
-										</span>
-									</p>
-									<h6 class="special-heading text-capitalize">
-										<span>
-											Experience
-										</span>
-									</h6>
-								</div>
-								<div class="divider-30 hidden-above-sm"></div>
-								<div class="simple-counter">
-									<h3 class="special-heading counter-wrap">
-										<span class="counter color-main thin big" data-from="0" data-to="65" data-speed="1800">0</span>
-									</h3>
-									<p class="special-heading bold color-darkgrey">
-										<span>
-											Offices
-										</span>
-									</p>
-									<h6 class="special-heading text-capitalize">
-										<span>
-											Worldwide
-										</span>
-									</h6>
-								</div>
-								<div class="divider-30 hidden-above-sm"></div>
-								<div class="simple-counter">
-									<h3 class="special-heading counter-wrap">
-										<span class="counter color-main thin big" data-from="0" data-to="15" data-speed="1800">0</span>
-										<span class="counter-add thin color-main big">k</span>
-									</h3>
-									<p class="special-heading bold color-darkgrey">
-										<span>
-											Workers
-										</span>
-									</p>
-									<h6 class="special-heading text-capitalize">
-										<span>
-											Employed
-										</span>
-									</h6>
-								</div>
-							</div>
-
-						</div>
-						<div class="col-lg-6">
-							<div class="divider-40 hidden-above-lg"></div>
-							<div id="map-vector"></div>
-						</div>
-					</div>
-				</div>
-			</section> -->
-
-			<!-- <section class="ls ms s-pt-xl-160 s-pt-lg-130 s-pt-md-90 s-pt-60 s-pb-xl-280 s-pb-lg-250 s-pb-md-90 s-pb-60">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h2 class="special-heading text-center">
-								<span class="text-capitalize">
-									Latest News
-								</span>
-							</h2>
-							<p class="special-heading text-center">
-								<span class="text-capitalize color-darkgrey bold">
-									our blog
-								</span>
-							</p>
-							<div class="divider-50 hidden-below-lg"></div>
-							<div class="divider-30 hidden-above-lg"></div>
-							<div class="shortcode-posts row tiled-layout c-gutter-30 c-mb-30">
-								<div class="bigitem col-xl-6 col-lg-5">
-									<article class="vertical-item ls rounded post type-post status-publish format-standard has-post-thumbnail">
-										<div class="item-media post-thumbnail">
-											<a href="blog-single-%40%40type.html">
-												<img src="images/blog/01.jpg" alt="img">
-											</a>
-										</div>< .post-thumbnail -->
-										<!-- <div class="item-content">
-											<header class="entry-header">
-												<div class="entry-meta">
-													<div class="byline">
-														<span class="date">
-															<a href="blog-%40%40type.html" rel="bookmark">
-																<time class="published entry-date" datetime="2019-04-09T12:23:09+00:00">20.03.2019</time>
-															</a>
-														</span>
-														<span class="author vcard">
-															<a class="url fn n" href="blog-%40%40type.html" rel="author"><span>by</span> Admin</a>
-														</span>
-													</div>
-												</div>
-												<h4 class="entry-title">
-													<a href="blog-single-%40%40type.html" rel="bookmark">
-														Consectetur adipisicing elited do eiusmod tempor incididunt ut labore.
-													</a>
-												</h4>
-
-												<!- .entry-meta -->
-											<!-- </header>
-											<!- .entry-header -->
-
-											<!-- <div class="entry-content">
-												<p>
-													Tempor incididunt labore dolmagna aliqua eniminim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
-												</p>
-											</div>.entry-content -->
-										<!-- </div><!- .item-content -->
-									<!-- </article>#post-## --> 
-								<!-- </div> --> 
-								<!-- <div class=" smallitem col-xl-6 col-lg-7">
-									<article class="vertical-item side-item ls rounded post type-post status-publish format-standard has-post-thumbnail">
-										<div class="item-media post-thumbnail">
-											<a href="blog-single-%40%40type.html">
-												<img src="images/blog/square/02.jpg" alt="img">
-											</a>
-										</div><!-- .post-thumbnail -->
-										<!-- <div class="item-content">
-											<header class="entry-header">
-												<div class="entry-meta">
-													<div class="byline">
-														<span class="date">
-															<a href="blog-%40%40type.html" rel="bookmark">
-																<time class="published entry-date" datetime="2019-04-09T12:23:09+00:00">20.03.2019</time>
-															</a>
-														</span>
-														<span class="author vcard">
-															<a class="url fn n" href="blog-%40%40type.html" rel="author"><span>by</span> Admin</a>
-														</span>
-													</div>
-												</div> -->
-												<!-- <h4 class="entry-title">
-													<a href="blog-single-%40%40type.html" rel="bookmark">
-														Lorem ipsum dolor sit amet consectetur
-													</a>
-												</h4> -->
-
-												<!-- .entry-meta -->
-											<!-- </header> -->
-											<!-- .entry-header -->
-
-											<!-- <div class="entry-content">
-												<p>
-													Tempor incididunt labore dolmagna aliqua eniminim veniam quis.
-												</p>
-											</div>.entry-content -->
-										<!-- </div>.item-content -->
-									<!-- </article>
-									<article class="vertical-item side-item ls rounded post type-post status-publish format-standard has-post-thumbnail">
-										<div class="item-media post-thumbnail">
-											<a href="blog-single-%40%40type.html">
-												<img src="images/blog/square/03.jpg" alt="img">
-											</a>
-										</div><!- .post-thumbnail -->
-										<!-- <div class="item-content">
-											<header class="entry-header">
-												<div class="entry-meta">
-													<div class="byline">
-														<span class="date">
-															<a href="blog-%40%40type.html" rel="bookmark">
-																<time class="published entry-date" datetime="2019-04-09T12:23:09+00:00">20.03.2019</time>
-															</a>
-														</span>
-														<span class="author vcard">
-															<a class="url fn n" href="blog-%40%40type.html" rel="author"><span>by</span> Admin</a>
-														</span>
-													</div> -->
-												<!-- </div> -->
-												<!-- <h4 class="entry-title">
-													<a href="blog-single-%40%40type.html" rel="bookmark">
-														Adipisicing elit sed do eiusmod
-													</a>
-												</h4> -->
-
-												<!-- .entry-meta -->
-											<!-- </header> -->
-											<!-- .entry-header -->
-
-											<!-- <div class="entry-content">
-												<p> -->
-													<!-- Nstrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. -->
-												<!-- </p> --> 
-											<!-- </div>.entry-content -->
-										<!-- </div><!- .item-content -->
-									<!-- </article> -->
-								<!-- </div> --> 
-							<!-- </div> -->
-							<!-- <div class="mt--30"></div> -->
-						<!-- </div> -->
-					<!-- </div> -->
-				<!-- </div> -->
-			<!-- </section> --> 
 
 
 			<footer class="page_footer  text-center c-gutter-100 text-sm-left  ds" id="sectionContact">
@@ -1784,33 +1569,33 @@
 									<div class="row c-mb-10 c-gutter-10">
 										<div class="col-lg-12 text-center">
 											<div class="form-group has-placeholder">
-												<label for="name22335x5553">Full Name <span class="required">*</span></label>
-												<input type="text" aria-required="true" size="30" value="" name="name" id="name22335x5553" class="form-control" placeholder="Full Name">
+												<label for="fullname">Full Name <span class="required">*</span></label>
+												<input type="text" aria-required="true" size="30" value="" name="name" id="fullname" class="form-control" placeholder="Full Name">
 											</div>
 										</div>
 									</div>
 									<div class="row c-mb-10 c-gutter-10">
 										<div class="col-lg-12 text-center">
 											<div class="form-group has-placeholder">
-												<label for="name223355553">Phone Number <span class="required">*</span></label>
+												<label for="phonenumber">Phone Number <span class="required">*</span></label>
 
-												<input type="text" aria-required="true" size="30" value="" name="name" id="name223355553" class="form-control" placeholder="Phone Number">
+												<input type="text" aria-required="true" size="30" value="" name="name" id="phonenumber" class="form-control" placeholder="Phone Number">
 											</div>
 										</div>
 									</div>
 									<div class="row c-mb-10 c-gutter-10">
 										<div class="col-sm-12 text-center">
 											<div class="form-group has-placeholder">
-												<label for="message22335553">Message</label>
+												<label for="message">Message</label>
 
-												<textarea aria-required="true" rows="6" cols="45" name="message" id="message22335553" class="form-control" placeholder="Your Message"></textarea>
+												<textarea aria-required="true" rows="6" cols="45" name="message" id="message" class="form-control" placeholder="Your Message"></textarea>
 											</div>
 										</div>
 									</div>
 									<div class="row c-mb-10 c-gutter-10">
 										<div class="col-sm-12 mb-0 mt-50">
 											<div class="form-group">
-												<input class="btn btn-gradient big-btn" type="submit" value="Send message">
+												<button class="btn btn-gradient big-btn" type="submit" value="Send message">Send Message</button>
 											</div>
 										</div>
 									</div>
@@ -2036,6 +1821,8 @@
 
 	<!-- Google Map Script -->
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0pr5xCHpaTGv12l73IExOHDJisBP2FK4&amp;callback=initGoogleMap"></script>
+
+
 
 </body>
 
