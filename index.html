@@ -1176,10 +1176,10 @@
                   <div class="row c-mb-10 c-gutter-10">
                     <div class="col-lg-12 text-center">
                       <div class="form-group has-placeholder">
-                        <label for="phonenumber">Phone Number <span class="required">*</span></label>
+                        <label for="email">Email Id <span class="required">*</span></label>
 
-                        <input type="text" aria-required="true" size="30" value="" name="name" id="phoneNumber2"
-                          class="form-control" placeholder="Phone Number" />
+                        <input type="email" aria-required="true" size="30" value="" name="email" id="email2"
+                          class="form-control" placeholder="Email id" />
                       </div>
                     </div>
                   </div>
@@ -1696,10 +1696,10 @@
                   <div class="row c-mb-10 c-gutter-10">
                     <div class="col-lg-12 text-center">
                       <div class="form-group has-placeholder">
-                        <label for="phonenumber">Phone Number <span class="required">*</span></label>
+                        <label for="email">Email Id <span class="required">*</span></label>
 
-                        <input type="text" aria-required="true" size="30" value="" name="name" id="phoneNumber"
-                          class="form-control" placeholder="Phone Number" />
+                        <input type="email" aria-required="true" size="30" value="" name="eamil" id="email1"
+                          class="form-control" placeholder="Email-Id" />
                       </div>
                     </div>
                   </div>
@@ -2045,46 +2045,25 @@
     function sendData() {
       console.log("senddata is calleld");
 
-      // console.log($fullName);
-      // console.log($phoneNumber);
-      // console.log($message);
-      let opts = {
-        $fullName: $("#fullName2").val(),
-        $phoneNumber: $("#phoneNumber2").val(),
-        $message: $("#message2").val()
-      };
+     
+      let opts = "Name - " + $("#fullName2").val() + "    email - " + $("#email2").val() + "    message - " +  $("#message2").val() ;   
+     
+      
 
-      // $.ajax({
-      //   url: "http://bf25ff23.ngrok.io/",
-      //   data: {
-      //     fullName: $fullName,
-      //     phoneNumber: $phoneNumber,
-      //     message: $message
-      //   },
-      //   type: "POST",
-      //   dataType: JSON,
-      //   success: function(data) {
-      //     console.log("Success");
-      //   },
-      //   error: function() {
-      //     console.log("error df");
-      //     console.log(error);
-      //   }
-      // });
-
-      fetch("http://bf25ff23.ngrok.io/", {
+      fetch("http://167.71.194.105:8080", {
         method: "POST",
          headers: {
-          "content-type": "application/json"
+          "Content-Type": "application/json"
         },
-        body: JSON.stringify(opts)
+        body: opts,
       })
-        .then(function (response) {
-          return response.json();
-        })
-        .then(function (data) {
-          console.log(data);
-        });
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Success", data);
+      })
+      .catch((err) => {
+        console.log(error);
+      });
     }
   </script>
 
@@ -2092,22 +2071,24 @@
     function sendData2() {
       console.log("senddata is calleld");
 
-      let opts = {
-        $fullName: $("#fullName").val(),
-        $phoneNumber: $("#phoneNumber").val(),
-        $message: $("#message1").val()
-      };
+      let opts = "Name - " + $("#fullName").val() + "    email - " + $("#email1").val() + "    message - " +  $("#message1").val() ;   
 
-      fetch("http://bf25ff23.ngrok.io/", {
-        method: "post",
-        body: JSON.stringify(opts)
+      console.log(JSON.stringify(opts))
+      fetch("http://167.71.194.105:8080", {
+        method: "POST",
+         headers: {
+          "Content-Type": "application/json"
+        },
+        
+        body: opts,
       })
-        .then(function (response) {
-          return response.json();
-        })
-        .then(function (data) {
-          console.log(data);
-        });
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Success", data);
+      })
+      .catch((err) => {
+        console.log(error);
+      });
     }
   </script>
 </body>
