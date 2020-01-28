@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="css/shop.css" class="color-switcher-link" />
   <link rel="stylesheet" href="css/popup.css" class="color-switcher-link" />
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <!--[if lt IE 9]>
@@ -2029,6 +2030,13 @@
     </div>
   </div>
 
+
+  Swal.fire(
+  'Good job!',
+  'You clicked the button!',
+  'success'
+ )
+
   <!-- <script src="js/compressed.js"></script> -->
   <script src="js/1.js"></script>
   <script src="js/main.js"></script>
@@ -2053,16 +2061,22 @@
       fetch("http://167.71.194.105:8080", {
         method: "POST",
          headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
+          'Accept': 'application/json'
         },
         body: opts,
       })
-      .then((response) => response.json())
+      //.then((response) => response.json())
       .then((data) => {
         console.log("Success", data);
+        Swal.fire(
+            'Successfully Sent!',
+            'JTD Energy will response as soon as possible!',
+             'success'
+        )
       })
       .catch((err) => {
-        console.log(error);
+        console.log(err);
       });
     }
   </script>
@@ -2071,7 +2085,7 @@
     function sendData2() {
       console.log("senddata is calleld");
 
-      let opts = "Name - " + $("#fullName").val() + "    email - " + $("#email1").val() + "    message - " +  $("#message1").val() ;   
+      let opts = "Name - " + $("#fullName").val() + "    email - " + $("#email1").val() + "           message - " +  $("#message1").val() ;   
 
       console.log(JSON.stringify(opts))
       fetch("http://167.71.194.105:8080", {
@@ -2082,12 +2096,19 @@
         
         body: opts,
       })
-      .then((response) => response.json())
+      //.then((response) => response.json())
       .then((data) => {
+       // alert("The message is succesfully sent the JTD Energy team response as soon as possible");
         console.log("Success", data);
+        Swal.fire(
+            'Successfully Sent!',
+            'JTD Energy will response as soon as possible!',
+             'success'
+        )
+     
       })
       .catch((err) => {
-        console.log(error);
+        console.log(err);
       });
     }
   </script>

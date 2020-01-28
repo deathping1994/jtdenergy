@@ -11713,6 +11713,17 @@ body.boxed {
 	letter-spacing: 0.3rem;
   }
 
+  .heading-message{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	background-image: linear-gradient(to right, #2980b9, #2c3e50);
+	display: inline-block;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+  }
+
   .heading-secondary:hover {
     transform: skewY(3deg) skewX(5deg) scale(1.1);
     text-shadow: 0.5rem 1rem 3rem rgba(87, 85, 85, 0.863);
@@ -11733,6 +11744,9 @@ body.boxed {
 	  }
 	  .heading-secondary{
 		  font-size: 1.2rem;
+	  }
+	  .heading-message{
+		  font-size: 1rem;
 	  }
 
 	  .paragraph{
@@ -11755,6 +11769,9 @@ body.boxed {
 	.heading-secondary{
 		font-size: .9rem;
 	}
+	.heading-message{
+		font-size: .7rem;
+	}
 
 	.paragraph{
 		font-size: .6rem;
@@ -11775,6 +11792,9 @@ body.boxed {
 	.heading-secondary{
 		font-size: .7rem;
 	}
+	.heading-message{
+		font-size: .7rem;
+	}
 
 	.paragraph{
 		font-size: .5rem;
@@ -11793,6 +11813,9 @@ body.boxed {
 		transform: translate(-20% -20%);
 	}
 	.heading-secondary{
+		font-size: .5rem;
+	}
+	.heading-message{
 		font-size: .5rem;
 	}
 
