@@ -22188,7 +22188,7 @@ filters
 
 .signature .signature-content span:before {
 	background: #dd4454;
-	bottom: 0;
+	bottom: 20px;
 	content: "";
 	height: 2px;
 	position: absolute;
