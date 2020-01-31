@@ -21246,6 +21246,9 @@ span.muted-bg {
 	.special-heading {
 		text-align: center;
 	}
+	.book-heading{
+		line-height: 1;
+	}
 }
 
 .special-heading .thin {
@@ -28591,7 +28594,8 @@ body.active-side-header.slide-right .page_header_side {
 
 @media (min-width: 300px) and (max-width: 575px) {
 	.page_slider .intro_featured_word {
-		font-size: 30px;
+		font-size: 25px !important;
+		line-height: 30px !important;
 		margin-bottom: 20px;
 		text-align: center;
 	}
