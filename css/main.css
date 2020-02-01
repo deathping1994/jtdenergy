@@ -11682,11 +11682,7 @@ body.boxed {
 	display: table;
 }
 
-/* .popup__left{
-	width: 33.33%;
-	display: table-cell;
-	vertical-align: middle;
-} */
+
 
 .popup__right{
 	display: table-cell;
@@ -21249,6 +21245,7 @@ span.muted-bg {
 	.book-heading{
 		line-height: 1;
 	}
+	
 }
 
 .special-heading .thin {
