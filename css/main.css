@@ -11655,6 +11655,69 @@ body.boxed {
 
 }
 
+.journey{
+	padding: 8rem;
+	position: relative;
+}
+
+.journey-video{
+	width: 80vw;
+	height: 80vh;
+	margin: 0 auto;
+	/* position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    overflow: hidden; */
+}
+
+.journey-video-content{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+@media (min-width: 1281px) {  
+
+  }
+/*   ##Device = Laptops, Desktops  ##Screen = B/w 1025px to 1280px*/
+@media (min-width: 1025px) and (max-width: 1280px) {  
+
+  }
+/*   ##Device = Tablets, Ipads (portrait)  ##Screen = B/w 768px to 1024px*/
+@media (min-width: 768px) and (max-width: 1024px) {  
+	.journey-video{
+		height: 50vh;
+	}
+  }
+/*   ##Device = Tablets, Ipads (landscape)  ##Screen = B/w 768px to 1024px*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {  
+
+  }
+/*   ##Device = Low Resolution Tablets, Mobiles (Landscape)  ##Screen = B/w 481px to 767px*/
+@media (min-width: 481px) and (max-width: 767px) {  
+	.journey-video{
+		height: 50vh;
+	}
+	.journey{
+		padding: 1rem;
+	}
+  }
+/*   ##Device = Most of the Smartphones Mobiles (Portrait)  ##Screen = B/w 320px to 479px*/
+@media (min-width: 320px) and (max-width: 480px) {  
+	.journey-video{
+		height: 40vh;
+		width: 100vw;
+	}
+	.journey{
+		padding: 1rem 0;
+		margin: 0;
+	}
+  }
+
+
+
+
 .popup__close:visited{
 	color: #777;
 	position: absolute;
