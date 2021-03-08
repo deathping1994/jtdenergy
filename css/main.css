@@ -11753,6 +11753,12 @@ body.boxed {
 	position: relative;
 }
 
+.popup__right--scrollable{
+	overflow-y: scroll; 
+	height: 33rem;
+	padding: 1rem 0 0 2rem;
+}
+
 .popup__img{
 	display: block;
 	width: 100%;
