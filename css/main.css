@@ -29125,7 +29125,7 @@ h4.entry-title {
 
 .entry-meta .byline {
 	align-items: center;
-	display: flex;
+	display: none;
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
